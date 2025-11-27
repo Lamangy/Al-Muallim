@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#047857"> <!-- Emerald-700 -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Al-Muallim - Arabisch Lernen</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom Arabic Font tweaks if necessary, though system fonts usually suffice */
+        @import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Sans+Arabic:wght@100..900&display=swap');
+        
+        .font-arabic {
+            font-family: 'Noto Sans Arabic', 'Amiri', serif;
+        }
+
+        /* Globaler Fokus-Stil wie angefordert */
+        input[type='text']:focus, input[type='search']:focus, textarea:focus {
+            border-color: #60a5fa !important; /* Hellblauer Rand (blue-400) */
+            outline: 2px solid #60a5fa !important; /* Zusätzlicher Outline für Sichtbarkeit */
+            outline-offset: 2px;
+            box-shadow: 0 0 0 4px #bfdbfe !important; /* Optionaler weicher Ring (blue-200) */
+        }
+
+        /* Verhindert Pull-to-Refresh auf Mobile, damit es sich wie eine App anfühlt */
+        body {
+            overscroll-behavior-y: none;
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0"
+  }
+}
+</script>
+</head>
+<body class="bg-slate-50 text-slate-900 selection:bg-emerald-200 selection:text-emerald-900">
+    <div id="root"></div>
+</body>
+</html>

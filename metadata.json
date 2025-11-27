@@ -1,0 +1,7 @@
+{
+  "name": "Al-Muallim: Arabisch Lernen mit Nagy Malek",
+  "description": "Eine interaktive App zum Lernen von Hocharabisch (Fusha). Lernen Sie das Alphabet, Vokabeln und üben Sie Ihre Aussprache mit KI-Feedback.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
